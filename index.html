@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TripMe - Viaje com a Gente</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+
+    <style>
+        :root {
+            --cream: #f5f0e8;
+            --warm: #e8ddc8;
+            --stone: #b5a58a;
+            --bark: #5c4a32;
+            --ink: #1e1612;
+            --rust: #c0622b;
+            --rust-light: #d9855a;
+            --sky: #d68fad;
+            --gold: #c9a84c;
+            --ff-serif: 'Roboto', sans-serif;
+            --ff-sans: 'Roboto', sans-serif;
+        }
+
+        html {scroll-behavior: smooth;}
+
+        body {
+            background: var(--cream);
+            color: var(--ink);
+            font-family: var(--ff-sans);
+            font-weight: 300;
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        img {display: block; max-width: 100%;}
+        a {text-decoration: none; color: inherit}
+
+    </style>
+</head>
+<body>
+    <nav id="nav" aria-label="Navegação principal">
+        <a href="#home" class="nav__logo">Trip<span>Me</span></a>
+        <ul class="nav__links">
+            <li><a href="#home">Início</a></li>
+            <li><a href="#minhaviagem">MinhaViagem</a></li>
+            <li><a href="#nosencontre">NosEncontre</a></li>
+            <li><a href="#conselhos">Conselhos</a></li>
+        </ul>
+    </nav>
+
+<main>
+    <section id="home" aria-label="Banner principal - vilarejo europeu">
+        <div class="banner_content"></div>
+            <span class="banner__tag">Explore o mundo com a gente</span>
+            <h1>Onde cada <em>viela</em> conta uma história</h1>
+            <p class="banner_sub">
+                Vilarejos escondidos, sabores únicos e memórias que duram para sempre. A Europa te espera.
+            </p>
+            <a href="#minhaviagem" class="btn btn--primary">Descubra destinos</a>
+            <a href="#nosencontre" class="btn btn--outline">Fale conosco</a>
+        </div>
+        <div class="banner__scroll" aria-hidden="true">scroll</div>
+    </section>
+
+    <!-- Seção MinhaViagem -->
+
+    <section id="minhaviagem" aria-label="titulo-viagem">
+        <div class="section__eyebrow"><span>MinhaViagem</span></div>
+        <h2 id="titulo-viagem">Destinos que <em>encantam</em></h2>
+        <p class="lead">
+            Cada roteiro é cuidadosamente pensado para que você viva a essência de cada lugar - longe do óbvio, perto do autêntico.
+        </p>
+
+        <article class="card">
+        <div class="card__img"
+            style="background-image: url('https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=600&q=75');"
+            role="img" aria-label="Vista da cidade de Bruges, Bélgica">
+         <span class="card__badge">Popular</span>
+        </div>
+        <div class="card__body">
+            <p class="card_country">Bélgica</p>
+            <h3 class="card__title">Bruges - A Veneza do Norte</h3>
+            <p class="card__desc">
+                Canais serenos, arquitetura medieval preservada e chocolate artesanal em cada esquina. Um conto de fadas que existe de verdade.
+            </p>
+            <a href="minhaviagem" class="card__link">Ver roteiro</a>
+        </div>
+     </article>
+
+     <article class="card">
+        <div class="card__img"
+            style="background-image: url('https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=600&q=75');"
+            role="img" aria-label="Panorama de Paris ao entardecer">
+            <span class="card__badge">Clássico</span>
+        </div>
+        <div class="card__body">
+            <p class="card__country">França</p>
+            <h3 class="card__title">Paris - A Cidade Luz </h3>
+            <p class="card__desc">
+                Boulevards, bistrôs e a Torre Eiffel ao entardecer. Paris nunca decepciona quem chega pela primeira vez - nem pela décima.
+            </p>
+            <a href="#minhaviagem" class="card__link">Ver roteiro</a>
+        </div>
+     </article>
+
+     <article class="card">
+        <div class="card__img"
+            style="background-image: url('https://images.unsplash.com/photo-1555993539-1732b0258235?w=600&q=75');"
+            role="img" aria-label="Vilarejo colorido de Cinque Terre, Itália">
+        <span class="card__badge">Exclusivo</span>
+        </div>
+        <div class="card__body">
+            <p class="card__country">Itália</p>
+            <h3 class="card__title">Cinque Terre - Cor e Alma</h3>
+            <p class="card__desc">
+                Cinco vilarejos abraçados pelo Mar Mediterrâneo. Cores vibrantes, trilhas litorâneas e frutos do mar frescos. Itália pura.
+            </p>
+            <a href="#minhaviagem" class="card__link">Ver roteiro</a>
+         </div>
+        </article>
+    </div>
+    
+    <div style="text-align:center; margin-top:3rem;">
+        <a href="#nav" class="btn btn--primary">Voltar ao topo</a>
+    </div>
+  </section>
+
+  <!-- Seção NosEncontre -->
